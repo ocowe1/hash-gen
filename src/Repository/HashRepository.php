@@ -16,6 +16,7 @@ class HashRepository extends ServiceEntityRepository
 {
 
     protected Hash $hash;
+    private ManagerRegistry $registry;
 
     public function __construct(ManagerRegistry $registry)
     {
