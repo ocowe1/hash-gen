@@ -1,0 +1,8 @@
+# config/packages/rate_limiter.yaml
+framework:
+  rate_limiter:
+    anonymous_api:
+      # use 'sliding_window' if you prefer that policy
+      policy: 'fixed_window'
+      limit: 10
+      interval: '1 minutes'
