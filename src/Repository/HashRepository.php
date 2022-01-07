@@ -29,7 +29,7 @@ class HashRepository extends ServiceEntityRepository
         $hash->setBatch($params['batch']);
         $hash->setBlock($params['block']);
         $hash->setString($params['string']);
-        $hash->setKey($params['key']);
+        $hash->setKey($params['key_string']);
         $hash->setHash($params['hash']);
         $hash->setAttempts($params['attempts']);
 

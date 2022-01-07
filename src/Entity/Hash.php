@@ -11,25 +11,25 @@ class Hash
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private ?int $id;
 
     #[ORM\Column(type: 'datetime')]
-    private $Batch;
+    private ?\DateTimeInterface $Batch;
 
     #[ORM\Column(type: 'integer')]
-    private $block;
+    private ?int $block;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $string;
+    private ?string $string;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $key;
+    private ?string $key_string;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $hash;
+    private ?string $hash;
 
     #[ORM\Column(type: 'integer')]
-    private $attempts;
+    private ?int $attempts;
 
     public function getId(): ?int
     {
@@ -55,7 +55,7 @@ class Hash
 
     public function setBlock(int $block): self
     {
-        $this->bloco = $block;
+        $this->block = $block;
 
         return $this;
     }
@@ -74,12 +74,12 @@ class Hash
 
     public function getKey(): ?string
     {
-        return $this->key;
+        return $this->key_string;
     }
 
-    public function setKey(string $key): self
+    public function setKey(string $key_string): self
     {
-        $this->key = $key;
+        $this->key_string = $key_string;
 
         return $this;
     }

@@ -67,7 +67,7 @@ class HashCommand extends Command
             'batch' => new \DateTime('now', new \DateTimeZone('America/Sao_Paulo')),
             'block' => 1,
             'string' => $string,
-            'key' => $new_string['key'],
+            'key_string' => $new_string['key'],
             'hash' => $new_string['hash'],
             'attempts' => $new_string['attempts']
         );
@@ -82,9 +82,9 @@ class HashCommand extends Command
                 $new_string = $hash;
                 $saveRequest = array(
                     'batch' => new \DateTime('now', new \DateTimeZone('America/Sao_Paulo')),
-                    'block' => $i+=1,
+                    'block' => $i += 1,
                     'string' => $new_string['hash'],
-                    'key' => $hash['key'],
+                    'key_string' => $hash['key'],
                     'hash' => $hash['hash'],
                     'attempts' => $hash['attempts']
                 );
