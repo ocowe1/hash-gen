@@ -20,6 +20,9 @@ class ListHashController extends AbstractController
      * This route will return all hashes that were generated and sored in the database.
      * Can be paged and sorted by attempts made to find the key.
      *
+     * To change the page 'page=2'
+     * To change the order 'sort=h.attempts&direction={DESC or ASC}'
+     *
      * @Route("/list", name="list_hash")
      * @param PaginatorInterface $paginator
      * @param Registry $registry
