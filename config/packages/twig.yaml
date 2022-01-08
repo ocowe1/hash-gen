@@ -1,0 +1,21 @@
+twig:
+  form_themes:
+    - form_div_layout.html.twig
+  globals: {  }
+  autoescape: name
+  autoescape_service: null
+  autoescape_service_method: null
+  cache: 'C:\dev\desafio\var\cache\dev/twig'
+  charset: UTF-8
+  debug: true
+  strict_variables: true
+  default_path: 'C:\dev\desafio/templates'
+  paths: {  }
+  date:
+    format: 'F j, Y H:i'
+    interval_format: '%d days'
+    timezone: null
+  number_format:
+    decimals: 0
+    decimal_point: .
+    thousands_separator: ','

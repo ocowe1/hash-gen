@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cdd8b335d4cce6fb129ee82d9dd02db",
+    "content-hash": "cad1208c957b28465fcac22a6cae3e35",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1522,6 +1522,165 @@
             "time": "2021-05-22T16:11:15+00:00"
         },
         {
+            "name": "knplabs/knp-components",
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/knp-components.git",
+                "reference": "755b0d10902a7db5dc654e9af86a7dcb9c7c5b7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/755b0d10902a7db5dc654e9af86a7dcb9c7c5b7d",
+                "reference": "755b0d10902a7db5dc654e9af86a7dcb9c7c5b7d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "symfony/event-dispatcher-contracts": "^2.0 || ^3.0",
+                "symfony/http-foundation": "^4.4 || ^5.4 || ^6.0"
+            },
+            "conflict": {
+                "doctrine/dbal": "<2.10"
+            },
+            "require-dev": {
+                "doctrine/mongodb-odm": "^2.0",
+                "doctrine/orm": "^2.7",
+                "doctrine/phpcr-odm": "^1.2",
+                "ext-pdo_sqlite": "*",
+                "jackalope/jackalope-doctrine-dbal": "^1.2",
+                "phpunit/phpunit": "^9.5",
+                "propel/propel1": "^1.7",
+                "ruflin/elastica": "^7.0",
+                "solarium/solarium": "^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
+                "symfony/property-access": "^4.4 || ^5.4 || ^6.0"
+            },
+            "suggest": {
+                "doctrine/common": "to allow usage pagination with Doctrine ArrayCollection",
+                "doctrine/mongodb-odm": "to allow usage pagination with Doctrine ODM MongoDB",
+                "doctrine/orm": "to allow usage pagination with Doctrine ORM",
+                "doctrine/phpcr-odm": "to allow usage pagination with Doctrine ODM PHPCR",
+                "propel/propel1": "to allow usage pagination with Propel ORM",
+                "ruflin/elastica": "to allow usage pagination with ElasticSearch Client",
+                "solarium/solarium": "to allow usage pagination with Solarium Client",
+                "symfony/property-access": "To allow sorting arrays"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Component\\": "src/Knp/Component"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "https://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/KnpLabs/knp-components/contributors"
+                }
+            ],
+            "description": "Knplabs component library",
+            "homepage": "http://github.com/KnpLabs/knp-components",
+            "keywords": [
+                "components",
+                "knp",
+                "knplabs",
+                "pager",
+                "paginator"
+            ],
+            "support": {
+                "issues": "https://github.com/KnpLabs/knp-components/issues",
+                "source": "https://github.com/KnpLabs/knp-components/tree/v3.5.0"
+            },
+            "time": "2021-12-11T12:45:19+00:00"
+        },
+        {
+            "name": "knplabs/knp-paginator-bundle",
+            "version": "v5.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
+                "reference": "216b9d5708001788321916c5b7632da9fb9ef6ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/216b9d5708001788321916c5b7632da9fb9ef6ca",
+                "reference": "216b9d5708001788321916c5b7632da9fb9ef6ca",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-components": "^2.4 || ^3.0",
+                "php": "^7.3 || ^8.0",
+                "symfony/config": "^4.4 || ^5.3 || ^6.0",
+                "symfony/dependency-injection": "^4.4 || ^5.3 || ^6.0",
+                "symfony/event-dispatcher": "^4.4 || ^5.3 || ^6.0",
+                "symfony/http-foundation": "^4.4 || ^5.3 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.3 || ^6.0",
+                "symfony/routing": "^4.4 || ^5.3 || ^6.0",
+                "symfony/translation": "^4.4 || ^5.3 || ^6.0",
+                "twig/twig": "^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.93",
+                "phpunit/phpunit": "^8.5 || ^9.5",
+                "symfony/expression-language": "^4.4 || ^5.3 || ^6.0",
+                "symfony/templating": "^4.4 || ^5.3 || ^6.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Bundle\\PaginatorBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle/contributors"
+                }
+            ],
+            "description": "Paginator bundle for Symfony to automate pagination and simplify sorting and other features",
+            "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle",
+            "keywords": [
+                "bundle",
+                "knp",
+                "knplabs",
+                "pager",
+                "pagination",
+                "paginator",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/KnpLabs/KnpPaginatorBundle/issues",
+                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v5.8.0"
+            },
+            "time": "2021-10-30T08:27:46+00:00"
+        },
+        {
             "name": "laminas/laminas-code",
             "version": "4.5.1",
             "source": {
@@ -1586,6 +1745,215 @@
                 }
             ],
             "time": "2021-12-19T18:06:55+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-common",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "opensource@ijaap.nl"
+                }
+            ],
+            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "FQSEN",
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
+            "time": "2020-06-27T09:03:43+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/622548b623e81ca6d78b721c5e029f4ce664f170",
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.3.2",
+                "psalm/phar": "^4.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
+                }
+            ],
+            "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
+            },
+            "time": "2021-10-19T17:43:47+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/93ebd0014cab80c4ea9f5e297ea48672f1b87706",
+                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0"
+            },
+            "require-dev": {
+                "ext-tokenizer": "*",
+                "psalm/phar": "^4.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                }
+            ],
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
+            },
+            "time": "2022-01-04T19:58:01+00:00"
+        },
+        {
+            "name": "phpstan/phpdoc-parser",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpdoc-parser.git",
+                "reference": "dbc093d7af60eff5cd575d2ed761b15ed40bd08e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/dbc093d7af60eff5cd575d2ed761b15ed40bd08e",
+                "reference": "dbc093d7af60eff5cd575d2ed761b15ed40bd08e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/process": "^5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\PhpDocParser\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPDoc parser with support for nullable, intersection and generic types",
+            "support": {
+                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.2.0"
+            },
+            "time": "2021-09-16T20:46:02+00:00"
         },
         {
             "name": "psr/cache",
@@ -3699,6 +4067,174 @@
             "time": "2021-09-13T13:58:11+00:00"
         },
         {
+            "name": "symfony/property-access",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-access.git",
+                "reference": "3f237ffd38a54592181ac62f63c6cabbca00051f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/3f237ffd38a54592181ac62f63c6cabbca00051f",
+                "reference": "3f237ffd38a54592181ac62f63c6cabbca00051f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/property-info": "^5.4|^6.0"
+            },
+            "require-dev": {
+                "symfony/cache": "^5.4|^6.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To cache access methods."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyAccess\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides functions to read and write from/to an object or array using a simple string notation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "access",
+                "array",
+                "extraction",
+                "index",
+                "injection",
+                "object",
+                "property",
+                "property path",
+                "reflection"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/property-access/tree/v6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-11T16:36:28+00:00"
+        },
+        {
+            "name": "symfony/property-info",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-info.git",
+                "reference": "fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf",
+                "reference": "fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/string": "^5.4|^6.0"
+            },
+            "conflict": {
+                "phpdocumentor/reflection-docblock": "<5.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "phpdocumentor/reflection-docblock": "^5.2",
+                "phpstan/phpdoc-parser": "^1.0",
+                "symfony/cache": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/serializer": "^5.4|^6.0"
+            },
+            "suggest": {
+                "phpdocumentor/reflection-docblock": "To use the PHPDoc",
+                "psr/cache-implementation": "To cache results",
+                "symfony/doctrine-bridge": "To use Doctrine metadata",
+                "symfony/serializer": "To use Serializer metadata"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyInfo\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kévin Dunglas",
+                    "email": "dunglas@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Extracts information about PHP class' properties using metadata of popular sources",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "doctrine",
+                "phpdoc",
+                "property",
+                "symfony",
+                "type",
+                "validator"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/property-info/tree/v6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-27T21:05:08+00:00"
+        },
+        {
             "name": "symfony/proxy-manager-bridge",
             "version": "v6.0.2",
             "source": {
@@ -3999,6 +4535,107 @@
             "time": "2021-11-07T13:29:17+00:00"
         },
         {
+            "name": "symfony/serializer",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/serializer.git",
+                "reference": "2282e7512a3264ef964cefce0a4a8037cd1044e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/2282e7512a3264ef964cefce0a4a8037cd1044e5",
+                "reference": "2282e7512a3264ef964cefce0a4a8037cd1044e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "doctrine/annotations": "<1.12",
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<5.4",
+                "symfony/property-access": "<5.4",
+                "symfony/property-info": "<5.4",
+                "symfony/uid": "<5.4",
+                "symfony/yaml": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.12",
+                "phpdocumentor/reflection-docblock": "^3.2|^4.0|^5.0",
+                "symfony/cache": "^5.4|^6.0",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/error-handler": "^5.4|^6.0",
+                "symfony/filesystem": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0",
+                "symfony/property-access": "^5.4|^6.0",
+                "symfony/property-info": "^5.4|^6.0",
+                "symfony/uid": "^5.4|^6.0",
+                "symfony/validator": "^5.4|^6.0",
+                "symfony/var-dumper": "^5.4|^6.0",
+                "symfony/var-exporter": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "For using the metadata cache.",
+                "symfony/config": "For using the XML mapping loader.",
+                "symfony/mime": "For using a MIME type guesser within the DataUriNormalizer.",
+                "symfony/property-access": "For using the ObjectNormalizer.",
+                "symfony/property-info": "To deserialize relations.",
+                "symfony/var-exporter": "For using the metadata compiler.",
+                "symfony/yaml": "For using the default YAML mapping loader."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Serializer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/serializer/tree/v6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-25T20:10:03+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v3.0.0",
             "source": {
@@ -4226,6 +4863,386 @@
                 }
             ],
             "time": "2021-12-16T22:13:01+00:00"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "a16c33f93e2fd62d259222aebf792158e9a28a77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/a16c33f93e2fd62d259222aebf792158e9a28a77",
+                "reference": "a16c33f93e2fd62d259222aebf792158e9a28a77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/translation-contracts": "^2.3|^3.0"
+            },
+            "conflict": {
+                "symfony/config": "<5.4",
+                "symfony/console": "<5.4",
+                "symfony/dependency-injection": "<5.4",
+                "symfony/http-kernel": "<5.4",
+                "symfony/twig-bundle": "<5.4",
+                "symfony/yaml": "<5.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "2.3|3.0"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/http-client-contracts": "^1.1|^2.0|^3.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/intl": "^5.4|^6.0",
+                "symfony/polyfill-intl-icu": "^1.21",
+                "symfony/service-contracts": "^1.1.2|^2|^3",
+                "symfony/yaml": "^5.4|^6.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools to internationalize your application",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/translation/tree/v6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-25T20:10:03+00:00"
+        },
+        {
+            "name": "symfony/translation-contracts",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "1b6ea5a7442af5a12dba3dbd6d71034b5b234e77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
+                "reference": "1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.0-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-07T12:43:40+00:00"
+        },
+        {
+            "name": "symfony/twig-bridge",
+            "version": "v6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/twig-bridge.git",
+                "reference": "52217ee6ca95a94177f7cfc584d8171784623209"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/52217ee6ca95a94177f7cfc584d8171784623209",
+                "reference": "52217ee6ca95a94177f7cfc584d8171784623209",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/translation-contracts": "^1.1|^2|^3",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/console": "<5.4",
+                "symfony/form": "<5.4",
+                "symfony/http-foundation": "<5.4",
+                "symfony/http-kernel": "<5.4",
+                "symfony/translation": "<5.4",
+                "symfony/workflow": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.12",
+                "egulias/email-validator": "^2.1.10|^3",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "symfony/asset": "^5.4|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/expression-language": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/intl": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0",
+                "symfony/polyfill-intl-icu": "~1.0",
+                "symfony/property-info": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/security-acl": "^2.8|^3.0",
+                "symfony/security-core": "^5.4|^6.0",
+                "symfony/security-csrf": "^5.4|^6.0",
+                "symfony/security-http": "^5.4|^6.0",
+                "symfony/serializer": "^5.4|^6.0",
+                "symfony/stopwatch": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0",
+                "symfony/web-link": "^5.4|^6.0",
+                "symfony/workflow": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0",
+                "twig/cssinliner-extra": "^2.12|^3",
+                "twig/inky-extra": "^2.12|^3",
+                "twig/markdown-extra": "^2.12|^3"
+            },
+            "suggest": {
+                "symfony/asset": "For using the AssetExtension",
+                "symfony/expression-language": "For using the ExpressionExtension",
+                "symfony/finder": "",
+                "symfony/form": "For using the FormExtension",
+                "symfony/http-kernel": "For using the HttpKernelExtension",
+                "symfony/routing": "For using the RoutingExtension",
+                "symfony/security-core": "For using the SecurityExtension",
+                "symfony/security-csrf": "For using the CsrfExtension",
+                "symfony/security-http": "For using the LogoutUrlExtension",
+                "symfony/stopwatch": "For using the StopwatchExtension",
+                "symfony/translation": "For using the TranslationExtension",
+                "symfony/var-dumper": "For using the DumpExtension",
+                "symfony/web-link": "For using the WebLinkExtension",
+                "symfony/yaml": "For using the YamlExtension"
+            },
+            "type": "symfony-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\Twig\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides integration for Twig with various Symfony components",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-16T22:13:01+00:00"
+        },
+        {
+            "name": "symfony/twig-bundle",
+            "version": "v6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/twig-bundle.git",
+                "reference": "1a31af12592d8b9498830ff0236f7357c41a6030"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/1a31af12592d8b9498830ff0236f7357c41a6030",
+                "reference": "1a31af12592d8b9498830ff0236f7357c41a6030",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": ">=2.1",
+                "php": ">=8.0.2",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/twig-bridge": "^5.4|^6.0",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<5.4",
+                "symfony/framework-bundle": "<5.4",
+                "symfony/translation": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "symfony/asset": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/expression-language": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/framework-bundle": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/stopwatch": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0",
+                "symfony/web-link": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\TwigBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a tight integration of Twig into the Symfony full-stack framework",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/twig-bundle/tree/v6.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-08T15:13:44+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -4460,6 +5477,140 @@
                 }
             ],
             "time": "2021-12-16T22:13:01+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v3.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "8f168c6ffa3ce76d1786b3cd52275424a3fc675b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8f168c6ffa3ce76d1786b3cd52275424a3fc675b",
+                "reference": "8f168c6ffa3ce76d1786b3cd52275424a3fc675b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v3.3.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-03T21:15:37+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.10.0"
+            },
+            "time": "2021-03-09T10:59:23+00:00"
         }
     ],
     "packages-dev": [

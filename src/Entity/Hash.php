@@ -8,63 +8,107 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: HashRepository::class)]
 class Hash
 {
+    /**
+     * @var int|null
+     */
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private ?int $id;
+    protected ?int $id;
 
-    #[ORM\Column(type: 'datetime')]
-    private ?\DateTimeInterface $Batch;
+    /**
+     * @var string|null
+     */
+    #[ORM\Column(type: 'string', length: 255)]
+    protected ?string $batch;
 
+    /**
+     * @var int|null
+     */
     #[ORM\Column(type: 'integer')]
-    private ?int $block;
+    protected ?int $block;
 
+    /**
+     * @var string|null
+     */
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $string;
+    protected ?string $string;
 
+    /**
+     * @var string|null
+     */
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $key_string;
+    protected ?string $key_string;
 
+    /**
+     * @var string|null
+     */
     #[ORM\Column(type: 'string', length: 255)]
-    private ?string $hash;
+    protected ?string $hash;
 
+    /**
+     * @var int|null
+     */
     #[ORM\Column(type: 'integer')]
-    private ?int $attempts;
+    protected ?int $attempts;
 
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getBatch(): ?\DateTimeInterface
+    /**
+     * @return string|null
+     */
+    public function getbatch(): ?string
     {
-        return $this->Batch;
+        return $this->batch;
     }
 
-    public function setBatch(\DateTimeInterface $Batch): self
+    /**
+     * @param string $batch
+     * @return $this
+     */
+    public function setBatch(string $batch): self
     {
-        $this->Batch = $Batch;
+        $this->batch = $batch;
 
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getBlock(): ?int
     {
         return $this->block;
     }
 
+    /**
+     * @param int $block
+     * @return $this
+     */
     public function setBlock(int $block): self
     {
         $this->block = $block;
-
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getString(): ?string
     {
         return $this->string;
     }
 
+    /**
+     * @param string $string
+     * @return $this
+     */
     public function setString(string $string): self
     {
         $this->string = $string;
@@ -72,11 +116,18 @@ class Hash
         return $this;
     }
 
-    public function getKey(): ?string
+    /**
+     * @return string|null
+     */
+    public function getKey_string(): ?string
     {
         return $this->key_string;
     }
 
+    /**
+     * @param string $key_string
+     * @return $this
+     */
     public function setKey(string $key_string): self
     {
         $this->key_string = $key_string;
@@ -84,11 +135,18 @@ class Hash
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getHash(): ?string
     {
         return $this->hash;
     }
 
+    /**
+     * @param string $hash
+     * @return $this
+     */
     public function setHash(string $hash): self
     {
         $this->hash = $hash;
@@ -96,11 +154,18 @@ class Hash
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getAttempts(): ?int
     {
         return $this->attempts;
     }
 
+    /**
+     * @param int $attempts
+     * @return $this
+     */
     public function setAttempts(int $attempts): self
     {
         $this->attempts = $attempts;

@@ -63,6 +63,21 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/lock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/rate-limiter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/twig-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-components" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

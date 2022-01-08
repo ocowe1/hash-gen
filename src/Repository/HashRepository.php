@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Hash;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -15,15 +16,29 @@ use Doctrine\Persistence\ManagerRegistry;
 class HashRepository extends ServiceEntityRepository
 {
 
+    /**
+     * @var Hash
+     */
     protected Hash $hash;
+
+    /**
+     * @var ManagerRegistry
+     */
     private ManagerRegistry $registry;
 
+    /**
+     * @param ManagerRegistry $registry
+     */
     public function __construct(ManagerRegistry $registry)
     {
         $this->registry = $registry;
         parent::__construct($registry, Hash::class);
     }
 
+    /**
+     * @param $params
+     * @return void
+     */
     public function insertHash($params)
     {
         $hash = new Hash();
@@ -38,32 +53,12 @@ class HashRepository extends ServiceEntityRepository
         $this->registry->getManager()->flush();
     }
 
-    // /**
-    //  * @return Hash[] Returns an array of Hash objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return QueryBuilder
+     */
+    public function getAllList(): QueryBuilder
     {
-        return $this->createQueryBuilder('h')
-            ->andWhere('h.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('h.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+        return $this->createQueryBuilder('h')->select('h.batch', 'h.string', 'h.block', 'h.attempts', 'h.key_string');
     }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Hash
-    {
-        return $this->createQueryBuilder('h')
-            ->andWhere('h.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

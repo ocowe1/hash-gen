@@ -85,11 +85,29 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
+    "knplabs/knp-components": {
+        "version": "v3.5.0"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.8.0"
+    },
     "laminas/laminas-code": {
         "version": "4.5.1"
     },
     "nikic/php-parser": {
         "version": "v4.13.2"
+    },
+    "phpdocumentor/reflection-common": {
+        "version": "2.2.0"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "5.3.0"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "1.6.0"
+    },
+    "phpstan/phpdoc-parser": {
+        "version": "1.2.0"
     },
     "psr/cache": {
         "version": "3.0.0"
@@ -224,6 +242,12 @@
     "symfony/polyfill-php81": {
         "version": "v1.24.0"
     },
+    "symfony/property-access": {
+        "version": "v6.0.2"
+    },
+    "symfony/property-info": {
+        "version": "v6.0.2"
+    },
     "symfony/proxy-manager-bridge": {
         "version": "v6.0.2"
     },
@@ -246,6 +270,9 @@
     "symfony/runtime": {
         "version": "v6.0.0"
     },
+    "symfony/serializer": {
+        "version": "v6.0.2"
+    },
     "symfony/service-contracts": {
         "version": "v3.0.0"
     },
@@ -255,6 +282,38 @@
     "symfony/string": {
         "version": "v6.0.2"
     },
+    "symfony/translation": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.3",
+            "ref": "da64f5a2b6d96f5dc24914517c0350a5f91dee43"
+        },
+        "files": [
+            "./config/packages/translation.yaml",
+            "./translations/.gitignore"
+        ]
+    },
+    "symfony/translation-contracts": {
+        "version": "v3.0.0"
+    },
+    "symfony/twig-bridge": {
+        "version": "v6.0.2"
+    },
+    "symfony/twig-bundle": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.4",
+            "ref": "bffbb8f1a849736e64006735afae730cb428b6ff"
+        },
+        "files": [
+            "./config/packages/twig.yaml",
+            "./templates/base.html.twig"
+        ]
+    },
     "symfony/var-dumper": {
         "version": "v6.0.2"
     },
@@ -263,5 +322,11 @@
     },
     "symfony/yaml": {
         "version": "v6.0.2"
+    },
+    "twig/twig": {
+        "version": "v3.3.7"
+    },
+    "webmozart/assert": {
+        "version": "1.10.0"
     }
 }
