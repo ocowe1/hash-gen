@@ -80,7 +80,7 @@ DATABASE_URL="mysql://{your_user}:{your_password}@127.0.0.1:3306/{your_database}
 LOCK_DSN=flock
 ```
 
-# Create the table:
+Create the table:
 ```
 php bin/console doctrine:schema:create
 ```
