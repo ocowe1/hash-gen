@@ -27,6 +27,20 @@
 ## :white_check_mark: Functionalities
 
 :heavy_check_mark: Limit of 10 requests per minute;
+<br>
+- change this on:
+```
+#config\packages\rate_limiter.yaml
+
+framework:
+  rate_limiter:
+    anonymous_api:
+      # use 'sliding_window' if you prefer that policy
+      policy: 'fixed_window'
+      limit: {value}
+      interval: '1 minutes'
+
+```
 
 :heavy_check_mark: Generate a hash starting with four zeros from a string concatenated with a random string of eight digits;
 
