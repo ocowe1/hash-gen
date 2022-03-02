@@ -130,7 +130,7 @@ php bin/console hash:gen {your_string} --requests={your_number_of_requests}
 
 The command return something similar to this:
 ```
-PS C:\dev\php-programmer-challenge> php bin/console hash:gen postman --requests=5
+PS C:\dev\hash-gen> php bin/console hash:gen postman --requests=5
  ! [NOTE] Hash: 000010450f49640f20d4164285dffd2f, Key 8564d35d, Attempts 124046
 
  ! [NOTE] Hash: 000095619b475ab2e1b7b7cbe84c322f, Key 741fd7fd, Attempts 62688
