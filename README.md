@@ -52,8 +52,8 @@ framework:
 
 ## :books: Languages and libs used 
 
-- [PHP](https://www.php.net): versão 8.1.1
-- [MySQL](https://dev.mysql.com/downloads/installer/): versão 8.0.27
+- [PHP](https://www.php.net): version 8.1.1
+- [MySQL](https://dev.mysql.com/downloads/installer/): version 8.0.27
 - [Doctrine](https://www.doctrine-project.org/index.html)
 - [KnpPaginationBundle](https://github.com/KnpLabs/KnpPaginatorBundle)
 
