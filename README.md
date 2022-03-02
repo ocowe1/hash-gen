@@ -1,4 +1,4 @@
-# PHP Programmer Challenge
+# Hash Generator
 
 ### :information_source: Topics
 - [About the project](#blue_book-about-the-project)
@@ -68,17 +68,17 @@ Before starting, make sure you meet the following requirements:
 
 ## :rocket: Running 
 
-To run `php-programmer-challenge`, follow the steps:
+To run `hash-gen`, follow the steps:
 
 In the terminal, clone the project:
 ```
-git clone https://github.com/ocowe1/php-programmer-challenge.git
+git clone https://github.com/ocowe1/hash-gen.git
 ```
 
 Enter the project folder:
 
 ```
-cd php-programmer-challenge
+cd hash-gen
 ```
 
 Install the dependencies
@@ -202,4 +202,4 @@ To sort by attempts use `sort=h.attempts&direction={DESC or ASC}`:
 
 This project is under license. See the [LICENSE](LICENSE.md) file for more details.
 
-[⬆ Voltar ao topo](#php-programmer-challenge)<br>
+[⬆ Voltar ao topo](#hash-gen)<br>
